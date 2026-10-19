@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Payment Book",
+    "slug": "payment-book",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.mandavo.paymentbook",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF8EF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sharing"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1a16d0d1-abe7-4e81-8c65-00e52d9bf8e4"
+      }
+    },
+    "owner": "yaahsathvara"
+  }
+}

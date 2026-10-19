@@ -1,0 +1,83 @@
+# ==========================================
+# Mandavo Payment Book - Monorepo .gitignore
+# ==========================================
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+!.env.example
+
+# Build & Compilation Outputs
+dist/
+build/
+web-build/
+out/
+*.tsbuildinfo
+.tsbuildinfo
+
+# Expo & React Native
+.expo/
+.expo-shared/
+expo-env.d.ts
+/ios/
+/android/
+.kotlin/
+*.orig.*
+.metro-health-check*
+
+# Android / iOS Keystores & Builds
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+*.apk
+*.aab
+
+# Logs & Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE & Editor Files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary & Cache
+.cache/
+.eslintcache
+tmp/
+temp/

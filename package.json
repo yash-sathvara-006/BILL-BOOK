@@ -1,0 +1,15 @@
+{
+  "name": "mandavo-payment-book",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "mobile",
+    "backend"
+  ],
+  "scripts": {
+    "dev:mobile": "npm run start --workspace=mobile",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:backend": "npm run build --workspace=backend",
+    "build:apk": "npm run build:apk --workspace=mobile"
+  }
+}

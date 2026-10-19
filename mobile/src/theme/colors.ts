@@ -1,0 +1,15 @@
+export const colors = {
+  background: '#FFF8EF',
+  surface: '#FFFFFF',
+  primary: '#C65A18',
+  primaryPressed: '#A74710',
+  heading: '#732D26',
+  text: '#292524',
+  muted: '#78716C',
+  border: '#EADFD2',
+  danger: '#B91C1C',
+  success: '#15803D',
+  chipCash: '#FEF3C7',
+  chipUPI: '#DCFCE7',
+  chipBank: '#E0F2FE',
+};

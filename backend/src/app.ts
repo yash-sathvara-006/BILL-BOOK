@@ -45,3 +45,16 @@ app.use('/api/v1/payments', paymentRoutes);
 app.use((_req: Request, res: Response) => {
   res.status(404).json({ success: false, message: 'API endpoint not found.' });
 });
+
+// Global Error Handler
+app.use((err: any, _req: Request, res: Response, _next: express.NextFunction) => {
+  console.error('[Unhandled Error]:', err);
+  const isDbError = err?.name === 'MongooseError' || err?.name === 'MongoServerSelectionError' || err?.message?.includes('buffering timed out');
+  res.status(500).json({
+    success: false,
+    message: isDbError
+      ? 'Database connection failed. Please ensure MongoDB Atlas IP whitelist allows 0.0.0.0/0 (all networks).'
+      : (err?.message || 'Internal Server Error'),
+  });
+});
+

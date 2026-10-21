@@ -6,16 +6,20 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#340F17"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "package": "com.mandavo.paymentbook",
       "adaptiveIcon": {
-        "backgroundColor": "#FFF8EF",
+        "backgroundColor": "#340F17",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundImage": "./assets/android-icon-background.png"
       },
       "predictiveBackGestureEnabled": false,
       "permissions": [
